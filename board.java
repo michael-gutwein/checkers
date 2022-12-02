@@ -1,31 +1,36 @@
-
 class board{
-    int col;
-    int row;
-    int[][] board;
+   private char[][] board;
 
-    public board(int col, int row, int[][] board){
-        this.col = col;
-        this.row = row;
-        this.board = board;
+    public board(){
+        board = new char[8][8];
+      initialization(); 
     }
-
-    public String toString(){
-        String checkerString = "";
-        String rowString = "";
-        for (int row = 0; row < board.length; row ++){
-            for (int col = 0; col < board[row].length; col ++){
-                rowString += board[row][col] + " ";
+    public void initialization(){
+        for (int i = 0; i < 8; i++)
+        {
+            for (int j = 0; j < 8; j++)
+            {
+                board[i][j] ='-';
             }
-            rowString = rowString.strip();
-            checkerString += rowString + "\n";
-            rowString = "";
+
         }
-        checkerString = checkerString.strip();
-        return checkerString;
+
+    }
+    public void printboard(){
+        System.out.println("----------------------------------");
+        for (int i = 0; i < 8; i++)
+        {System.out.print(" | ");
+        for (int j = 0; j < 8; j++)
+        {
+            System.out.print(board[i][j] + " | ");
+
+        }
+        System.out.println();
+        System.out.println("----------------------------------");
+
     }
 
-    public static void main(String[] args) {
-        int[][] 
+
     }
+
 }
