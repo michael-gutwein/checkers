@@ -28,8 +28,9 @@ class board{
         System.out.println();
         System.out.println("----------------------------------");
 
-    }
 
+    }
+        System.out.println("A    B    C    D    E    F    G    H");
 
     }
 
