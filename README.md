@@ -4,13 +4,13 @@ checkers (java edition)
 
 
 done:
-board generator
-game generator
+board generator,
+game generator,
+piece class,
+import pieces to board,
+movement,
 
 to do:
 
-piece class
-import pieces to board
-movement
-check if a move is valid
+check if a move is valid,
 graphics? (If we have time)
