@@ -18,14 +18,18 @@ class pieces{
         this.state = p.state;
     }
 
-    
-
     public String toString(){
-        if (this.colour == "black"){
+        if (this.colour == "black" && this.state == "pawn"){
             return "b";
         }
-        else if (this.colour == "white"){
+        else if (this.colour == "white" && this.state == "pawn"){
             return "w";
+        }
+        else if (this.colour == "black" && this.state == "king"){
+            return "B";
+        }
+        else if (this.colour == "white" && this.state == "king"){
+            return "W";
         }
         else{
             return " ";
